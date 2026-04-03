@@ -109,13 +109,15 @@ function App() {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (currentView === 'stats' || isFinished || isTransitioning) return;
+      if (currentView === 'stats' || isFinished || isTransitioning || isFilterOpen) return;
       if (e.key === '1' || e.code === 'Numpad1') handleScore('incorrect');
       if (e.key === '3' || e.code === 'Numpad3') handleScore('correct');
+      if (e.key === 'ArrowLeft') handlePrev();
+      if (e.key === 'ArrowRight') handleNext();
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentView, isFinished, isTransitioning, handleScore]);
+  }, [currentView, isFinished, isTransitioning, isFilterOpen, handleScore]);
 
   useEffect(() => {
     // If deck becomes empty due to active filter changes, handle it
