@@ -36,29 +36,29 @@ export const WordFilter = ({
         exit={{ opacity: 0, scale: 0.9, y: 20 }}
         className="bg-paper-cream w-full max-w-2xl max-h-[85vh] flex flex-col torn-paper-1 shadow-[12px_12px_0px_#080808] border-4 border-bg-dark z-10"
       >
-        <div className="p-6 border-b-4 border-bg-dark flex justify-between items-center bg-accent-red text-white">
+        <div className="p-6 border-b-4 border-bg-dark flex justify-between items-center bg-accent-red text-white shrink-0">
           <h2 className="text-3xl font-marker">{lessonName.replace('_', ' ')} Settings</h2>
           <button onClick={onClose} className="hover:scale-110 transition-transform focus:outline-none">
             <X size={32} strokeWidth={3} />
           </button>
         </div>
 
-        <div className="p-4 flex gap-4 border-b-4 border-bg-dark bg-bg-forest text-paper-cream overflow-x-auto">
+        <div className="p-4 flex gap-4 border-b-4 border-bg-dark bg-bg-forest text-paper-cream overflow-x-auto shrink-0">
            <button 
              onClick={() => onToggleAll(true)}
-             className="px-4 py-2 bg-paper-cream text-bg-dark font-bold font-grotesk whitespace-nowrap hover:bg-accent-green hover:text-bg-dark transition-colors"
+             className="px-4 py-2 bg-paper-cream text-bg-dark font-bold font-grotesk whitespace-nowrap hover:bg-accent-green hover:text-bg-dark transition-colors shrink-0"
            >
              Include All
            </button>
            <button 
              onClick={() => onToggleAll(false)}
-             className="px-4 py-2 border-2 border-paper-cream font-bold font-grotesk whitespace-nowrap hover:bg-paper-cream hover:text-bg-dark transition-colors"
+             className="px-4 py-2 border-2 border-paper-cream font-bold font-grotesk whitespace-nowrap hover:bg-paper-cream hover:text-bg-dark transition-colors shrink-0"
            >
              Exclude All
            </button>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-4 sm:p-6 flex flex-col gap-3 custom-scrollbar">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6 flex flex-col gap-3 custom-scrollbar min-h-0">
           <p className="text-sm font-bold font-serif-custom italic text-bg-dark/60 text-center mb-2">Uncheck items you want to skip during practice.</p>
           {vocabularyList.map((vocab) => {
             const isExcluded = excludedWords.includes(vocab.romaji);
