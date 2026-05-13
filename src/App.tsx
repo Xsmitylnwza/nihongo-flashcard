@@ -112,8 +112,8 @@ function App() {
       if (currentView === 'stats' || isFinished || isTransitioning || isFilterOpen) return;
       if (e.key === '1' || e.code === 'Numpad1') handleScore('incorrect');
       if (e.key === '3' || e.code === 'Numpad3') handleScore('correct');
-      if (e.key === 'ArrowLeft') handlePrev();
-      if (e.key === 'ArrowRight') handleNext();
+      if (e.key === 'ArrowLeft' || e.key === '4' || e.code === 'Numpad4') handlePrev();
+      if (e.key === 'ArrowRight' || e.key === '6' || e.code === 'Numpad6') handleNext();
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
