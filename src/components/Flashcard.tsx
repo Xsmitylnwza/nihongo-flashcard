@@ -62,7 +62,7 @@ export const Flashcard = ({ vocabulary }: FlashcardProps) => {
         >
           <span className="text-xl font-marker mb-2 text-accent-green">{vocabulary.romaji}</span>
           <span className="text-2xl font-serif-custom text-accent-red mb-4">{vocabulary.Kana}</span>
-          <h2 className="text-6xl sm:text-7xl font-grotesk font-bold text-center tracking-tighter">{vocabulary.Japanese}</h2>
+          <h2 className="text-6xl sm:text-7xl font-grotesk font-bold text-center leading-normal pb-2">{vocabulary.Japanese}</h2>
         </div>
       </motion.div>
     </div>
