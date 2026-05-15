@@ -183,9 +183,7 @@ export const lessonsData = {
     { "romaji": "kesa", "Japanese": "けさ", "Kana": "けさ", "Thai": "เมื่อเช้า" },
     { "romaji": "konban", "Japanese": "今晩", "Kana": "こんばん", "Thai": "เย็นนี้, คืนนี้" },
     { "romaji": "yasumi", "Japanese": "休み", "Kana": "やすみ", "Thai": "วันหยุด" },
-    { "romaji": "hiruyasumi", "Japanese": "昼休み", "Kana": "ひるやすみ", "Thai": "พักกลางวัน, พักเที่ยง" }
-  ],
-  "บทที่_5": [
+    { "romaji": "hiruyasumi", "Japanese": "昼休み", "Kana": "ひるやすみ", "Thai": "พักกลางวัน, พักเที่ยง" },
     { "romaji": "shiken", "Japanese": "試験", "Kana": "しけん", "Thai": "การสอบ, ข้อสอบ" },
     { "romaji": "kaigi", "Japanese": "会議", "Kana": "かいぎ", "Thai": "การประชุม (～を します : ประชุม)" },
     { "romaji": "eiga", "Japanese": "映画", "Kana": "えいが", "Thai": "ภาพยนตร์, หนัง" },
@@ -214,7 +212,9 @@ export const lessonsData = {
     { "romaji": "Asuka", "Japanese": "あすか", "Kana": "あすか", "Thai": "ชื่อร้านอาหารญี่ปุ่น (นามสมมุติ)" },
     { "romaji": "Appuru Ginkou", "Japanese": "アップル銀行", "Kana": "アップルぎんこう", "Thai": "ชื่อธนาคาร (นามสมมุติ)" },
     { "romaji": "Midori Toshokan", "Japanese": "みどり図書館", "Kana": "みどりとしょかん", "Thai": "ชื่อหอสมุด (นามสมมุติ)" },
-    { "romaji": "Yamato Bijutsukan", "Japanese": "やまと美術館", "Kana": "やまとびじゅつかん", "Thai": "ชื่อหอศิลป์ (นามสมมุติ)" },
+    { "romaji": "Yamato Bijutsukan", "Japanese": "やまと美術館", "Kana": "やまとびじゅつかん", "Thai": "ชื่อหอศิลป์ (นามสมมุติ)" }
+  ],
+  "บทที่_5": [
     { "romaji": "ikimasu", "Japanese": "行きます", "Kana": "いきます", "Thai": "ไป" },
     { "romaji": "kimasu", "Japanese": "来ます", "Kana": "きます", "Thai": "มา" },
     { "romaji": "kaerimasu", "Japanese": "帰ります", "Kana": "かえります", "Thai": "กลับ" },
